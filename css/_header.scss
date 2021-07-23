@@ -1,0 +1,426 @@
+
+
+.header{
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 15px 43px 0 0;
+    background-color: #f8f8f8;
+    position: relative;
+   
+}
+.header_select{
+   
+    font-weight: 300;
+    font-size: 12px;
+}
+.header_link{
+    font-size: 12px;
+}
+.header a{
+    font-size: 12px;
+}
+.top_header{
+    display: flex;
+}
+.t_header_left, .t_header_right{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.h_main_link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:5px;
+  img{
+      width: 27px;
+      height: 25px;
+  }
+  &:hover p{
+      text-decoration: underline;
+  }
+  
+}
+.header_main, .h_main_left, .h_main_right, .placemik{
+    display: flex;
+   
+}
+.header_main{
+    gap:50px;
+    align-items: center;
+}
+.placemik{
+    align-items: flex-end;
+    position: relative;
+    &::before{
+        content: 'made in korea';
+        position: absolute;
+        left:35%;
+        top:0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+    }
+}
+.h_main_left{
+    display: flex;
+    align-items: center;
+    gap:32px;
+    justify-content: space-between;
+    flex-basis: 80%;
+    padding-left: 44px;
+}
+.h_main_right{
+    //gap: 50px;
+    justify-content: space-between;
+    flex-basis: 20%;
+}
+.place{
+    height: 30px;
+    width: 135px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.mik{
+    height: 42px;
+    width: 54px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+// 
+// .logo_item{
+//     width: 250px;
+//     height: 80px;
+// }
+.logo_item p{
+    font-size: 11px;
+   margin: 0;
+}
+.burger{
+    height: 77px;
+    width: 77px;
+    background: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap:10px;
+   align-items: center;
+   padding: 20px 25px;
+   box-sizing: border-box;
+    div{
+        height: 3px;
+        width: 30px;
+        background-color: #fff;
+        //margin-bottom: 1px;
+    }
+    
+}
+.header_form {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    height: 46px;
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -2px;
+        right: -2px;
+        background:linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+        z-index: -1;
+    }
+
+}
+.header_form select{
+    height: 44px;
+    width: 96px;
+    background: #f1e0f1;
+    padding: 0 10px;
+    font-size: 14px;
+    border-right: 15px solid #f1e0f1;
+   
+}
+form{
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+}
+.header_form input{
+    height: 44px;
+    max-width: 458px;
+    width: 100%;
+    margin-left: -5px;
+    border:none;
+}
+.h_button{
+    height: 44px;
+    background-color: #fff;
+    border:none;
+    width: 80px;
+}
+
+.discount{
+    display: flex;
+    gap: 50px;
+    margin-top:20px;
+   
+}
+.discount_left{
+    flex-basis: 80%;
+    overflow: hidden;
+    padding-left: 44px;
+}
+.discount_right{
+    flex-basis: 20%;
+}
+.slider{
+    overflow: hidden;
+}
+.slider_item{
+    overflow: hidden;
+    height: 350px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 90% 25%;
+    }
+}
+.slider .slick-track{
+    display: flex;
+    //gap:50px;
+    height: 350px;
+}
+.slider .slick-arrow {
+    position: absolute;
+    //margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+    z-index: 10; // стрелки сверху картинок
+    font-size: 0; // убираем надпись на дефолтной стрелке
+    width: 25px; // ширина стрелки
+    height: 19px; // высота стрелки
+    border:none;
+
+}
+.slider .slick-arrow.slick-prev{
+    left: 10px; // левая стрелка остается с левой стороны слайдера
+    top:45%;
+    background: #f1e0f1;
+    background-image:url(../img/left-arrow-line-symbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-size: cover;
+    height: 50px;
+width: 50px;
+border-radius: 50%;
+//padding: 17px;
+
+   
+    //transform: translateY(-50%);
+}
+.slider .slick-arrow.slick-next{
+    right: 10px; // правая стрелка переместилась справа от слайдера
+    background: url(../img/arrow-next.png) 0 0 / 100% no-repeat;
+    top:45%;
+    background: #f1e0f1;
+    background-image:url(../img/left-arrow-line-symbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+//  .slick-active{
+//          background-color: black;
+//          width: 5px;
+//          height: 5px;
+//      }
+ .cat_slider .slick-track{
+     //display: flex;
+    //gap:50px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .cat_slider{
+      overflow: hidden;
+      display: flex;
+      position: relative;
+      min-width: 0;
+    //   max-width:900px;
+    //   width:100%;
+  }
+  .cs_item{
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    //max-width:900px;
+    //width:100%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.cat_slider .slick-arrow {
+    position: absolute;
+    //margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+    z-index: 10; // стрелки сверху картинок
+    font-size: 0; // убираем надпись на дефолтной стрелке
+    width: 25px; // ширина стрелки
+    height: 19px; // высота стрелки
+    border:none;
+
+}
+.cat_slider .slick-arrow.slick-prev{
+    left: 10px; // левая стрелка остается с левой стороны слайдера
+    top:45%;
+    background: #f1e0f1;
+    background-image:url(../img/left-arrow-line-symbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    height: 50px;
+width: 50px;
+border-radius: 50%;
+
+}
+.cat_slider .slick-arrow.slick-next{
+    right: 10px; // правая стрелка переместилась справа от слайдера
+    background: url(../img/arrow-next.png) 0 0 / 100% no-repeat;
+    top:45%;
+    background: #f1e0f1;
+    background-image:url(../img/left-arrow-line-symbol.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+    height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+
+
+.discount_right{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    a{
+        display: block;
+        height: 162px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+}
+.cat{
+    display: grid;
+    grid-template-columns: 1.2fr 4fr;
+    background-color: #fff;
+    overflow: hidden;
+    position: absolute;
+    z-index: 50;
+    width:100%;
+}
+.cat_left{
+    padding: 30px 0 30px 40px;
+    background: #f1e0f1;
+    overflow: hidden;
+}
+.c_left_link{
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+    max-width: 300px;
+    display: block;
+    &:hover{
+        background-color: #fff;
+    }
+}
+.link_bold{
+    font-weight: 500;
+   
+}
+.c_left_list li{
+    position: relative;
+    width: 100%;
+}
+.c_left_list li:first-child::before{
+    content: url(../img/before_link_1.png);
+    position: absolute;
+    left:-20px;
+    top:20%;
+}
+
+.c_left_list li:nth-child(20)::before{
+    content: url(../img/before_link_2.png);
+    position: absolute;
+    left:-20px;
+    top:20%;
+}
+.c_left_list li:nth-child(21)::before{
+    content: url(../img/before_link_3.png);
+    position: absolute;
+    left:-20px;
+    top:20%;
+}
+
+.c_right_top{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 40px;
+    position: absolute;
+    left:30px;
+    top:30px;
+}
+.cat_right{
+    padding: 32px;
+    position: relative;
+}
+.crt_link{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.crb{
+    display: flex;
+    min-width: 0;
+}
+.c_right_bottom{
+    margin-top: 40px;
+    overflow: hidden;
+    display: flex;
+    min-width: 0;
+    // width: 100%;
+    // height: 100%;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+@import '_media.scss';

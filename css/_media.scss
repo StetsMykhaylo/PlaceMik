@@ -1,0 +1,151 @@
+
+@media (max-width:1200px){
+    .f_top{
+        display: block;
+    }
+    .footer{
+        grid-template-columns: 2fr 2fr;
+        row-gap: 30px;
+    }
+    .footer_logo{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+   .discount_right{
+       display: none;
+   }
+   .discount_left{
+       flex-basis: 100%;
+   }
+   .t_header_left, .logo_item, .header_form {
+    display: none; 
+    }
+    .t_header_right{
+        margin-left: auto;
+    }
+    .h_main_right{
+        gap: 40px;
+        
+    }
+    .buy_inner, .news_inner, .recomend_inner {
+        grid-template-columns: repeat( 5, 1fr);
+        gap: 20px 20px;
+    }
+    .store_title{
+        font-size: 18px;
+    }
+    .watch_inner{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .watch_inner .watch_item:first-child{
+        display: none;
+    }
+    .crt_list:first-child,.crt_list:last-child {
+        display: none;
+    }
+    .c_right_top{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:834px){
+    .buy_inner, .news_inner, .recomend_inner, .watch_inner {
+        grid-template-columns: repeat( 4, 1fr);
+    }
+    .for_you_inner{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .watch_item{
+        display: block;
+    }
+    .cat_left{
+        padding: 30px 0 30px 20px;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+      
+        padding: 0 20px;
+      
+    }
+    .watch{
+        padding: 40px 20px;
+    }
+    .footer{
+        padding: 40px 20px;
+    }
+    .burger{
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        gap:8px;
+        div{
+            width: 25px;
+        }
+    }
+    .header_main{
+        margin-top: 30px;
+    }
+    .slider .slick-arrow{
+        display: none;
+    }
+    .header{
+        padding-right: 20px;
+    }
+    .h_main_left{
+        padding-left: 20px;
+    }
+    .discount_left{
+       padding-left: 20px;
+    }
+    
+    .notice, .rate{
+        font-size: 10px;
+    }
+    .marple{
+        font-size: 12px;
+    }
+    .footer_list li, .footer_item p{
+        font-size: 12px;
+    }
+    .footer_item form{
+        display: block;
+    }
+}
+@media (max-width:667px){
+    .buy_inner, .news_inner, .recomend_inner, .for_you_inner, .watch_inner {
+        grid-template-columns: repeat( 2, 1fr);
+    }
+  
+    .link_low{
+        bottom: -34%;
+    }
+    .notice, .rate{
+        font-size: 12px;
+    }
+    .marple{
+        font-size: 14px;
+    }
+}
+@media (max-width:420px){
+    .h_main_link:nth-child(1), .h_main_link:nth-child(2){
+        display: none;
+    }
+    .buy_inner, .news_inner, .recomend_inner, .for_you_inner, .watch_inner, .footer {
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    .link_low{
+        bottom: -25%;
+    }
+    .burger{
+        display: none;
+    }
+    
+
+  
+             
+}
